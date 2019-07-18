@@ -190,9 +190,19 @@ nav a {
   font-size: 1.6rem;
   padding: 20px;
 }
+@media (max-width:500px) {
+  .home {
+    margin: 10% 15%;
+  }
+}
 .home header {
   padding: 2%;
   border-bottom: 2px dashed gray;
+}
+@media (max-width:500px) {
+  .home header {
+    margin: 2% 5%;
+  }
 }
 .home header h1 {
   display: flex;
@@ -237,6 +247,12 @@ nav a {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width:500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
@@ -249,8 +265,19 @@ nav a {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width:500px) {
+  .home .content-destination {
+    width: 85vw;
+    margin: 2% 2%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
+}
+@media (max-width:500px) {
+  .home .content-destination img {
+    width: 85vw;
+  }
 }
 .home .content-pick {
   padding-top: 30px;
@@ -258,9 +285,20 @@ nav a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width:500px) {
+  .home .content-pick {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width:500px) {
+  .home .content-pick .destination {
+    width: 100%;
+  }
 }
 .home .content-pick .destination .btn {
   text-decoration: none;
@@ -273,4 +311,9 @@ nav a {
   padding: 3% 5%;
   width: 85%;
   height: 15%;
+}
+@media (max-width:500px) {
+  .home .content-pick .destination .btn {
+    width: 100%;
+  }
 }
