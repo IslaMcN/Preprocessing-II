@@ -3,23 +3,30 @@
     margin: 10% 15%;
   }
   header{
-    @media @mobile{
-      margin: 2% 5%;
-    }
+    display:flex;
+    justify-content: space-between;
     padding: 2%;
     border-bottom: 2px dashed gray;
+    @media @mobile{
+      margin: 2% 5%;
+      flex-direction:column;
+      justify-content: center;
+      align-content: center;
+    }
+    
     
     
     h1{
         display:flex;
         justify-content: flex-start;
+        width: 25%;
         @media @mobile{
           display:flex;
           justify-content: center;
         }//media closing
-    }//header closing
-   
     }//h1 closing
+   
+    }//header closing
   
   .content-section {
     margin: 30px 0;
